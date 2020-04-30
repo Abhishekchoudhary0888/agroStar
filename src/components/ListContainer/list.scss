@@ -1,0 +1,60 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  display: block;
+  width: 100%;
+  padding: 10px 10px 0 10px;
+  box-sizing: border-box;
+  background-color: #eee;
+  font-family: sans-serif;
+  box-shadow: 0px 0px 1px 2px #ddd;
+}
+
+// Seach Block CSS
+.search-section {
+  display: block;
+  width: 100%;
+}
+
+.search-input {
+  display: block;
+  width: 100%;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  padding: 10px 10px;
+  margin-bottom: 15px;
+  color: #333;
+  font-size: 12px;
+  font-family: sans-serif;
+  outline: none;
+  box-shadow: 0px 0px 1px 1px #ddd;
+
+  &:after {
+    content: "";
+    background: url("../../assets/search.jpg");
+    right: 10px;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.content-section {
+  position: relative;
+}
+
+.viewbag-wrap {
+  display: flex;
+  width: calc(100% - 60px);
+  background-color: #377c1d;
+  padding: 10px 20px;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 52px;
+  font-size: 13px;
+  color: #fff;
+  z-index: 2;
+}
